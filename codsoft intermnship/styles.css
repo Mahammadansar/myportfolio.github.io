@@ -1,0 +1,135 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(184, 169, 130);
+    color: #333;
+    
+}
+
+p {
+    font-weight: bold;
+    font-weight: bolder;
+    overflow:auto ;
+    font-style: unset;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+header, section, footer {
+    padding: 2rem;
+    
+}
+
+header {
+    background-color: #333;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 30px;
+    background-color: rgb(128, 128, 52);
+}
+
+header p {
+    color: #bbb;
+    font-size: 1rem;
+}
+
+#about img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#skills li {
+    background-color: black;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#projects .project {
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color:  #3e2d2d;
+    transition: transform 0.2s ease-in-out;
+    border-image-width: 20px;
+}
+
+#projects .project:hover {
+    transform: scale(1.02);
+}
+
+#projects img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+#resume a {
+    text-decoration: none;
+    color: #04080c;
+    font-weight: bold;
+}
+
+#contact p {
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.intro-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.intro-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.intro-image img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+h4 {
+    font-size: large;
+    color: #e4c200;
+}
